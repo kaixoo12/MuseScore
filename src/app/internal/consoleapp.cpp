@@ -248,6 +248,7 @@ void ConsoleApp::applyCommandLineOptions(const CmdOptions& options, IApplication
     audioExportConfiguration()->setExportMp3BitrateOverride(options.exportAudio.mp3Bitrate);
     midiImportExportConfiguration()->setMidiImportOperationsFile(options.importMidi.operationsFile);
     guitarProConfiguration()->setLinkedTabStaffCreated(options.guitarPro.linkedTabStaffCreated);
+    guitarProConfiguration()->setDeviceForSvgExport(options.guitarPro.deviceType);
     guitarProConfiguration()->setExperimental(options.guitarPro.experimental);
     musicXmlConfiguration()->setNeedUseDefaultFontOverride(options.importMusicXml.useDefaultFont);
     musicXmlConfiguration()->setInferTextTypeOverride(options.importMusicXml.inferTextType);

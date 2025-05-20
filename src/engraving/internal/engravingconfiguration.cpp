@@ -438,12 +438,12 @@ void EngravingConfiguration::setDoNotSaveEIDsForBackCompat(bool doNotSave)
 
 bool EngravingConfiguration::guitarProImportExperimental() const
 {
-    return guitarProConfiguration() ? guitarProConfiguration()->experimental() : false;
+    return true;
 }
 
 bool EngravingConfiguration::experimentalGuitarBendImport() const
 {
-    return m_experimentalGuitarBendImport;
+    return true;
 }
 
 void EngravingConfiguration::setExperimentalGuitarBendImport(bool enabled)
